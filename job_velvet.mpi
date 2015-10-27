@@ -1,0 +1,21 @@
+#!/bin/bash
+
+#$ -V                     # Inherit the submission environment 
+#$ -cwd                   # Start job in  submission directory
+#$ -A Geraniaceae-Genomes
+#$ -M annayu2010@gmail.com
+#$ -m be
+#$ -N Velvet
+#$ -o $JOB_NAME.o$JOB_ID  # Name of the output file (eg. myMPI.oJobID)
+#$ -e $JOB_NAME.e$JOB_ID  # Name of the error file
+#$ -pe 12way 24            # Requests 12 cores/node, 12 cores total
+#$ -q largemem # Queue name
+#$ -l h_rt=24:00:00       # Run time (hh:mm:ss) - 5 mins
+
+module load velvet
+for (( k = 71; k <= 79; k += 2 ))
+do
+	velveth $k\dir  $k -fastq -shortPaired ThalWeis_combined.fastq 1>$k\VelvetOut;
+	velvetg $k\dir  -exp_cov 50  -ins_length 500 -scaffolding no 1>$k\VelvetOut;
+done
+
