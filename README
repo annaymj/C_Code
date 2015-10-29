@@ -1,0 +1,12 @@
+This is the README file for PCSE project
+
+The project folder contains 3 sub folders.
+
+1. The doc folder
+	This folder contains the pdf and supplementary table1.
+
+2. The src folder
+	This folder contains the input data used in the code and source code
+
+3. The bin folder
+	This folder contains the executable and the bash script used to run the executable
