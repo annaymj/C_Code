@@ -1,0 +1,39 @@
+/*README file for stc-hw7*/
+/*STUDENT NAME: Mengjie Yu*/
+
+Below is the output for the SectionB in PartIII
+f(x) = x/(1+x^2), x = 0.5 converges, while x = 0.75 does not converge
+
+x0 is 0.500000
+epsilon is 0.000001
+kmax is 20
+f0 is 0.400000
+Iteration 1: x=-0.3333333333, error=0.3000000000
+Iteration 2: x=0.0833333333, error=0.0827586207
+Iteration 3: x=-0.0011655012, error=0.0011654996
+Iteration 4: x=0.0000000032, error=0.0000000032
+
+x0 is 0.750000
+epsilon is 0.000001
+kmax is 20
+f0 is 0.480000
+Iteration 1: x=-1.9285714286, error=0.4086486486
+Iteration 2: x=-5.2755293487, error=0.1829798113
+Iteration 3: x=-10.9442969723, error=0.0906152605
+Iteration 4: x=-22.0728760589, error=0.0452116755
+Iteration 5: x=-44.2365474192, error=0.0225941964
+Iteration 6: x=-88.5183294392, error=0.0112956537
+Iteration 7: x=-177.0592559529, error=0.0056476466
+Iteration 8: x=-354.1298079195, error=0.0028238008
+Iteration 9: x=-708.2652635307, error=0.0014118976
+Iteration 10: x=-1416.5333508678, error=0.0007059484
+Iteration 11: x=-2833.0681136338, error=0.0003529742
+Iteration 12: x=-5666.1369332162, error=0.0001764871
+Iteration 13: x=-11332.2742194065, error=0.0000882435
+Iteration 14: x=-22664.5486153002, error=0.0000441218
+Iteration 15: x=-45329.0973188439, error=0.0000220609
+Iteration 16: x=-90658.1946818095, error=0.0000110304
+Iteration 17: x=-181316.3893856799, error=0.0000055152
+Iteration 18: x=-362632.7787823901, error=0.0000027576
+Iteration 19: x=-725265.5575702954, error=0.0000013788
+Iteration 20: x=-1450531.1151433485, error=0.0000006894
